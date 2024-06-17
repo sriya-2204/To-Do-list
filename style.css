@@ -1,0 +1,170 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: "Montserrat", sans-serif;
+  margin: 30px auto;
+  color: #3e3e3e;
+}
+
+h1 {
+  color: #808000; /* Olive green */
+  text-align: center;
+  font-weight: 700;
+  font-size: 48px;
+}
+
+.alert {
+  background: linear-gradient(to right, #808000, #9acd32); /* Olive green gradient */
+  color: #d3d3d3; /* Light grey */
+  text-align: center;
+  width: 300px;
+  padding: 20px 10px;
+  font-weight: 600;
+  border-radius: 5px;
+  margin: auto;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  cursor: pointer;
+  user-select: none;
+}
+
+.container {
+  border-radius: 10px;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px auto;
+  width: 500px;
+}
+
+.add-form {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+#input {
+  border-radius: 10px 0 0 10px;
+  border: 2px solid #dadada;
+  padding: 15px;
+  width: 100%;
+  font-size: 16px;
+}
+
+#input:focus {
+  border-color: #808000; /* Olive green */
+}
+
+#submit {
+  background-color: #808000; /* Olive green */
+  border: none;
+  color: #d3d3d3; /* Light grey */
+  padding: 15px;
+  cursor: pointer;
+  border-radius: 0 10px 10px 0;
+}
+
+#submit:hover {
+  background-color: #9acd32; /* Lighter olive green */
+}
+
+.head {
+  background: linear-gradient(to right, #808000, #9acd32); /* Olive green gradient */
+  color: #d3d3d3; /* Light grey */
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 10px 10px 0 0;
+}
+
+.date, .time {
+  font-size: 16px;
+  width: 33%;
+}
+
+.add svg {
+  cursor: pointer;
+}
+
+.pad {
+  background-color: #d3d3d3; /* Light grey */
+  border-radius: 0 0 10px 10px;
+  height: 400px;
+  overflow: auto;
+  padding: 20px;
+}
+
+.placeholder h4 {
+  color: #757575;
+  text-align: center;
+}
+
+#todo ul li {
+  background-color: #fff;
+  list-style-type: none;
+  border-bottom: 1px solid #dadada;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.list {
+  width: 80%;
+}
+
+input[type="checkbox"] {
+  height: 20px;
+  width: 20px;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #808000; /* Olive green */
+}
+
+.la-trash-alt {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.delete:hover {
+  color: #808000; /* Olive green */
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+  margin: 50px auto;
+}
+
+footer a {
+  color: #808000; /* Olive green */
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 36px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .alert {
+    width: 80%;
+    font-size: 14px;
+  }
+}

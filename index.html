@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager | TO-DO List Web App</title>
+    <meta name="description" content="Task Manager is a simple To Do List web app built using Pure JavaScript.">
+    
+    <!-- Social Media Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Task Manager | TO-DO List Web App">
+    <meta property="og:description" content="Task Manager is a simple To Do List web app built using Pure JavaScript.">
+    <meta property="og:image" content="preview.jpg">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Task Manager | TO-DO List Web App">
+    <meta property="twitter:description" content="Task Manager is a simple To Do List web app built using Pure JavaScript.">
+    <meta property="twitter:image" content="preview.jpg">
+
+    <!-- Fonts and Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="tasker.construct();">
+    <h1>Task Manager</h1>
+
+    <div class="alert">
+        <p>⚠ Please add a task first!</p>
+    </div>
+
+    <div class="container">
+        <div class="form-container">
+            <div class="add-form">
+                <input id="input" type="text" placeholder="Type your To-Do works...">
+                <button type="submit" id="submit">ADD</button>
+            </div>
+        </div>
+        <div class="head">
+            <div class="date">
+                <p>00:00:00</p>
+            </div>
+            <div class="add">
+                <svg width="2rem" height="2rem" viewBox="0 0 16 16" fill="currentColor">
+                    <path fill-rule="evenodd" d="M8 15A7 7 0 1 0 8 1a7 7 0 0 0 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                    <path fill-rule="evenodd" d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                </svg>
+            </div>
+            <div class="time">
+                <p>00:00:00</p>
+            </div>
+        </div>
+        <div class="pad">
+            <div class="placeholder">
+                <h4>Click on the + icon to add a new task.</h4>
+            </div>
+            <div id="todo">
+                <ul id="tasksContainer"></ul>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Made by <a href="https://alnahian2003.github.io/me" target="_blank">Sriya</a>.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
